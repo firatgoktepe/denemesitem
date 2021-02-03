@@ -1,0 +1,112 @@
+/* IMAGE BLOCK */
+/*
+<main class="has-title width-max">
+  <figure>
+    <img src="" alt="">
+    <figcaption class="wysiwyg">
+      *** WISYWIG
+    </figcaption>
+  </figure>
+</main>
+*/
+
+$font-stack:  Helvetica, sans-serif;
+$font-color: rgba(255, 255, 255, 1);
+$font-button-color: rgba(255, 255, 255, 1);
+$button-color: rgba(0, 0, 0, 0.5);
+$button-black: rgba(0, 0, 0, 1);
+$title-bgcolor: rgba(0, 0, 0, 0.5);
+
+
+.slider{
+    width: 100%;
+    height: 500px;
+   position: relative; 
+  
+  .right,
+  .left{
+    position: absolute;
+    background: $button-color;
+    font-size: 50px;
+    font-weight: bold;
+    color: $font-button-color;
+    mix-blend-mode: multiply;
+    padding: 10px 20px;
+    border-radius: 50%;
+    z-index: 100;
+    cursor: pointer;
+    top: 50%;
+  }
+  .left{
+    left:2%;
+  }
+  .right{
+    right: 2%;
+  }
+   .right:hover,
+  .left:hover{
+    background: $button-black;
+ 
+    
+  }
+  .slider-indexes{
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+    
+      .index{
+        display: inline-block;
+        margin: 5px;
+        border: 10px $button-color solid ;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    .index:hover{
+      border-color: $button-black;
+    }
+  }
+  
+.slide{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: none;
+  
+  img{
+    width: 100%;
+    height: 500px;
+     object-fit: cover;
+    
+  }
+  .slide-title{
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      background: $title-bgcolor;
+      font: $font-stack;
+      color: $font-color;
+      width: 300px;  
+      height: 250px; 
+      box-sizing: content-box;
+      padding: 20px;  
+    
+    .name{
+      width: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+      .description{
+        width: 100%;
+        font-size: 20px;
+        text-align: justify;
+
+        }
+      }       
+  }
+}
+
+ 

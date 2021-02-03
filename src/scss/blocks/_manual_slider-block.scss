@@ -1,0 +1,71 @@
+/* IMAGE BLOCK */
+/*
+<main class="has-title width-max">
+  <figure>
+    <img src="" alt="">
+    <figcaption class="wysiwyg">
+      *** WISYWIG
+    </figcaption>
+  </figure>
+</main>
+*/
+
+
+.home-product-new-hldr {
+  position: relative;
+  width: 1140px;
+}
+.home-product-new {
+  width: 1140px;
+  overflow: hidden;
+}
+.home-grid.products-grid.products-grid--max-4 {
+  transition: -ms-transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s, transform 0.5s ease 0s;
+  position: relative;
+  white-space: nowrap;
+}
+.item-container {
+  display: inline-block;
+  margin: 4px;
+  vertical-align: top;
+  width: 20vw;
+}
+.slider-btn-hldr-left {
+  left: -32px;
+}
+.slider-btn-hldr-right {
+  right: -32px;
+}
+.slider-btn-hldr {
+  bottom: 0;
+  display: block;
+  padding: 0;
+  width: 24px;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.slider-btn {
+  background-color: transparent;
+  border: 0 none;
+  color: buttontext;
+  cursor: pointer;
+  display: block;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+#left-btn {
+  display: none;
+}
+.products-grid {
+  .item {
+    margin-left: 0;
+    background: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    float: left;
+  }
+}
+
+ 
